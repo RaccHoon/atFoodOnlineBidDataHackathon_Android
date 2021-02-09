@@ -1,0 +1,250 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/appBarLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#F6BE67"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <androidx.appcompat.widget.Toolbar
+                android:id="@+id/myToolbar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#F6BE67"
+                android:minHeight="?attr/actionBarSize"
+                android:theme="?attr/actionBarTheme"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:title=" " />
+
+            <ImageView
+                android:id="@+id/imageView10"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="164dp"
+                android:layout_marginEnd="80dp"
+                app:layout_constraintEnd_toStartOf="@+id/mypage_bt"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/myToolbar"
+                app:srcCompat="@drawable/imagelogo" />
+
+            <ImageButton
+                android:id="@+id/mypage_bt"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_marginTop="9dp"
+                android:layout_marginEnd="16dp"
+                android:layout_marginBottom="9dp"
+                android:backgroundTint="#00000000"
+                android:onClick="Mypage"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/imageView10"
+                app:layout_constraintTop_toTopOf="parent"
+                app:srcCompat="@drawable/imagemypage" />
+
+            <ImageButton
+                android:id="@+id/imageButton8"
+                android:layout_width="75dp"
+                android:layout_height="0dp"
+                android:layout_marginStart="18dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:backgroundTint="#00000000"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/imageView10"
+                app:layout_constraintTop_toTopOf="parent"
+                app:srcCompat="@drawable/imagesearch" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <ImageButton
+        android:id="@+id/gochujang"
+        android:layout_width="360dp"
+        android:layout_height="352dp"
+        android:layout_marginStart="23dp"
+        android:layout_marginEnd="24dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.424"
+        app:srcCompat="@drawable/jang" />
+
+    <ImageButton
+        android:id="@+id/plus2"
+        android:layout_width="68dp"
+        android:layout_height="80dp"
+        android:layout_marginBottom="62dp"
+        android:background="#00000000"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/gochujang"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.139"
+        app:srcCompat="@drawable/plus" />
+
+    <ImageButton
+        android:id="@+id/imageButton4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="23dp"
+        android:layout_marginTop="9dp"
+        android:layout_marginEnd="217dp"
+        app:layout_constraintBottom_toTopOf="@+id/gochujang"
+        app:layout_constraintEnd_toStartOf="@+id/plus2"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/appBarLayout"
+        app:srcCompat="@drawable/personimage" />
+
+    <TextView
+        android:id="@+id/usernameone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="12dp"
+        android:layout_marginTop="21dp"
+        android:layout_marginEnd="122dp"
+        android:layout_marginBottom="18dp"
+        android:text="김재훈"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/gochujang"
+        app:layout_constraintEnd_toStartOf="@+id/plus2"
+        app:layout_constraintStart_toEndOf="@+id/imageButton4"
+        app:layout_constraintTop_toBottomOf="@+id/appBarLayout" />
+
+    <androidx.constraintlayout.widget.Barrier
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:barrierDirection="top"
+        tools:layout_editor_absoluteX="120dp"
+        tools:layout_editor_absoluteY="527dp" />
+
+    <androidx.constraintlayout.widget.Barrier
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:barrierDirection="top"
+        tools:layout_editor_absoluteX="148dp"
+        tools:layout_editor_absoluteY="148dp" />
+
+    <TextView
+        android:id="@+id/ingredient2"
+        android:layout_width="160dp"
+        android:layout_height="160dp"
+        android:layout_marginStart="23dp"
+        android:layout_marginTop="42dp"
+        android:layout_marginEnd="228dp"
+        android:layout_marginBottom="16dp"
+        android:text=" 된장(시판용 된장) 2큰술(20g),  멸치(국물용 멸치) 20마리(20g),  물 3컵(600ml),  고춧가루 약간,  무 35g,  청양고추 1개(10g),  애호박 1/9개(30g),  두부 50g,  팽이버섯 20g 대파 5cm(10g),  마늘(다진 마늘) 1/2큰술(5g)"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/gochujang" />
+
+    <TextView
+        android:id="@+id/ingredient"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="23dp"
+        android:layout_marginTop="12dp"
+        android:layout_marginEnd="285dp"
+        android:layout_marginBottom="6dp"
+        android:text="레시피의 재료"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/ingredient2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/gochujang" />
+
+    <TextView
+        android:id="@+id/recipe"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="25dp"
+        android:layout_marginTop="45dp"
+        android:layout_marginEnd="51dp"
+        android:layout_marginBottom="149dp"
+        android:text="된장찌개의 레시피"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.125"
+        app:layout_constraintStart_toEndOf="@+id/ingredient2"
+        app:layout_constraintTop_toBottomOf="@+id/gochujang"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <TextView
+        android:id="@+id/recipe2"
+        android:layout_width="170dp"
+        android:layout_height="130dp"
+        android:layout_marginStart="26dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="32dp"
+        android:layout_marginBottom="14dp"
+        android:text="01. 냄비에 국물용 멸치와 물을 넣고 한소끔 끓여 체에 걸러 멸치 육수를 2컵(400ml)을 만든다.(국물용 멸치의 머리와 내장은 떼어내면 멸치 육수의 쓴맛이 없어진다.) 무는 사방 3cm 크기로 납작하게 썬다. 두부는 사방 2cm 크기로 깍뚝 썰고 애호박은 0.5cm 두께로 4등분한다. 청양고추와 대파는 송송 썬다. 팽이버섯은 밑동을 제거한 후 가닥가닥 뜯는다. 02. 냄비에 멸치 국물을 붓고 체에 된장을 올려 풀어준다. 03. 무를 넣고 푹 익도록 끓인다. 04. 애호박, 두부, 청양고추, 대파, 팽이버섯, 고춧가루를 넣고 한소끔 끓인다.(중간 중간에 떠오르는 거품을 걷어낸다.)"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/ingredient2"
+        app:layout_constraintTop_toBottomOf="@+id/recipe" />
+
+    <ImageButton
+        android:id="@+id/carrot1"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="3dp"
+        android:background="#00000000"
+        app:layout_constraintEnd_toStartOf="@+id/carrotint"
+        app:layout_constraintTop_toBottomOf="@+id/gochujang"
+        app:srcCompat="@drawable/carrot" />
+
+    <TextView
+        android:id="@+id/carrotint"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginEnd="20dp"
+        android:text="173"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toStartOf="@+id/text1"
+        app:layout_constraintTop_toBottomOf="@+id/gochujang" />
+
+    <ImageButton
+        android:id="@+id/text1"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="3dp"
+        android:background="#00000000"
+        app:layout_constraintEnd_toStartOf="@+id/textint"
+        app:layout_constraintTop_toBottomOf="@+id/gochujang"
+        app:srcCompat="@drawable/talk" />
+
+    <TextView
+        android:id="@+id/textint"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:layout_marginTop="15dp"
+        android:text="52"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/gochujang"
+        app:layout_constraintTop_toTopOf="@+id/carrot1" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

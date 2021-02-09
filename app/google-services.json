@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "560886881974",
+    "firebase_url": "https://hackathon-784bc-default-rtdb.firebaseio.com",
+    "project_id": "hackathon-784bc",
+    "storage_bucket": "hackathon-784bc.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:560886881974:android:f48388b45fb92da216d017",
+        "android_client_info": {
+          "package_name": "com.example.hello"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "560886881974-fjsj0j5atbhdohlik0i4s7ufg2gaod81.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCpnVxy_pkRmNzE3hwnPakqCC-pTI6CP2c"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "560886881974-fjsj0j5atbhdohlik0i4s7ufg2gaod81.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

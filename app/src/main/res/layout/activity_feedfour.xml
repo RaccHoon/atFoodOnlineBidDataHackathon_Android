@@ -1,0 +1,233 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/appBarLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#F6BE67"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <androidx.appcompat.widget.Toolbar
+                android:id="@+id/myToolbar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#F6BE67"
+                android:minHeight="?attr/actionBarSize"
+                android:theme="?attr/actionBarTheme"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:title=" " />
+
+            <ImageView
+                android:id="@+id/imageView10"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="164dp"
+                android:layout_marginEnd="80dp"
+                app:layout_constraintEnd_toStartOf="@+id/mypage_bt"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/myToolbar"
+                app:srcCompat="@drawable/imagelogo" />
+
+            <ImageButton
+                android:id="@+id/mypage_bt"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_marginTop="9dp"
+                android:layout_marginEnd="16dp"
+                android:layout_marginBottom="9dp"
+                android:backgroundTint="#00000000"
+                android:onClick="Mypage"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/imageView10"
+                app:layout_constraintTop_toTopOf="parent"
+                app:srcCompat="@drawable/imagemypage" />
+
+            <ImageButton
+                android:id="@+id/imageButton8"
+                android:layout_width="75dp"
+                android:layout_height="0dp"
+                android:layout_marginStart="18dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:backgroundTint="#00000000"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/imageView10"
+                app:layout_constraintTop_toTopOf="parent"
+                app:srcCompat="@drawable/imagesearch" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <ImageButton
+        android:id="@+id/gochujang"
+        android:layout_width="360dp"
+        android:layout_height="352dp"
+        android:layout_marginStart="23dp"
+        android:layout_marginEnd="24dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.424"
+        app:srcCompat="@drawable/fish" />
+
+    <ImageButton
+        android:id="@+id/imageButton4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="23dp"
+        android:layout_marginTop="9dp"
+        app:layout_constraintBottom_toTopOf="@+id/gochujang"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/appBarLayout"
+        app:srcCompat="@drawable/personimage" />
+
+    <TextView
+        android:id="@+id/usernameone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="12dp"
+        android:layout_marginTop="21dp"
+        android:layout_marginBottom="18dp"
+        android:text="송영범"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/gochujang"
+        app:layout_constraintStart_toEndOf="@+id/imageButton4"
+        app:layout_constraintTop_toBottomOf="@+id/appBarLayout" />
+
+    <androidx.constraintlayout.widget.Barrier
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:barrierDirection="top"
+        tools:layout_editor_absoluteX="120dp"
+        tools:layout_editor_absoluteY="527dp" />
+
+    <androidx.constraintlayout.widget.Barrier
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:barrierDirection="top"
+        tools:layout_editor_absoluteX="148dp"
+        tools:layout_editor_absoluteY="148dp" />
+
+    <TextView
+        android:id="@+id/ingredient2"
+        android:layout_width="160dp"
+        android:layout_height="160dp"
+        android:layout_marginStart="23dp"
+        android:layout_marginTop="42dp"
+        android:layout_marginEnd="228dp"
+        android:layout_marginBottom="16dp"
+        android:text="꽁치 52g,  콩기름 5g,  소금 1g"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/gochujang" />
+
+    <TextView
+        android:id="@+id/ingredient"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="23dp"
+        android:layout_marginTop="12dp"
+        android:layout_marginEnd="285dp"
+        android:layout_marginBottom="6dp"
+        android:text="레시피의 재료"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/ingredient2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/gochujang" />
+
+    <TextView
+        android:id="@+id/recipe"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="25dp"
+        android:layout_marginTop="45dp"
+        android:layout_marginEnd="51dp"
+        android:layout_marginBottom="149dp"
+        android:text="꽁치구이의 레시피"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.125"
+        app:layout_constraintStart_toEndOf="@+id/ingredient2"
+        app:layout_constraintTop_toBottomOf="@+id/gochujang"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <TextView
+        android:id="@+id/recipe2"
+        android:layout_width="170dp"
+        android:layout_height="130dp"
+        android:layout_marginStart="26dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="32dp"
+        android:layout_marginBottom="14dp"
+        android:text="01. 꽁치는 손질하여 준비 해둔다. 02. 후라이팬에 식용유를 두르고 꽁치를 앞뒤로 노릇노릇하게 구워준다. "
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/ingredient2"
+        app:layout_constraintTop_toBottomOf="@+id/recipe" />
+
+    <ImageButton
+        android:id="@+id/carrot1"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="3dp"
+        android:background="#00000000"
+        app:layout_constraintEnd_toStartOf="@+id/carrotint"
+        app:layout_constraintTop_toBottomOf="@+id/gochujang"
+        app:srcCompat="@drawable/carrot" />
+
+    <TextView
+        android:id="@+id/carrotint"
+        android:layout_width="8dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginEnd="20dp"
+        android:text="2"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toStartOf="@+id/text1"
+        app:layout_constraintTop_toBottomOf="@+id/gochujang" />
+
+    <ImageButton
+        android:id="@+id/text1"
+        android:layout_width="44dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="3dp"
+        android:background="#00000000"
+        app:layout_constraintEnd_toStartOf="@+id/textint"
+        app:layout_constraintTop_toBottomOf="@+id/gochujang"
+        app:srcCompat="@drawable/talk" />
+
+    <TextView
+        android:id="@+id/textint"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:layout_marginTop="15dp"
+        android:text="0"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/gochujang"
+        app:layout_constraintTop_toBottomOf="@+id/gochujang" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

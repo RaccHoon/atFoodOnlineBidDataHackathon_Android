@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+    <androidx.constraintlayout.widget.ConstraintLayout tools:context=".Mypage"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:background="#F6BE67"
+        android:id="@+id/appBarLayout">
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_height="match_parent"
+        android:layout_width="match_parent">
+
+    <androidx.appcompat.widget.Toolbar
+        app:title=" "
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:background="#F6BE67"
+        android:id="@+id/myToolbar"
+        android:theme="?attr/actionBarTheme"
+        android:minHeight="?attr/actionBarSize"/>
+
+    <ImageView
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        app:layout_constraintTop_toTopOf="@+id/myToolbar"
+        app:layout_constraintStart_toStartOf="parent"
+        android:id="@+id/imageView10"
+        app:srcCompat="@drawable/imagelogo"
+        app:layout_constraintEnd_toStartOf="@+id/mypage_bt"
+        android:layout_marginEnd="80dp"
+        android:layout_marginStart="164dp"/>
+
+    <ImageButton
+        android:layout_height="0dp"
+        android:layout_width="0dp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:id="@+id/mypage_bt"
+        app:srcCompat="@drawable/imagemypage"
+        android:layout_marginEnd="16dp"
+        app:layout_constraintStart_toEndOf="@+id/imageView10"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:backgroundTint="#00000000"
+        android:layout_marginBottom="9dp"
+        android:layout_marginTop="9dp"/>
+
+    <ImageButton
+        android:layout_height="0dp"
+        android:layout_width="75dp"
+        app:layout_constraintTop_toTopOf="parent"
+        android:id="@+id/imageButton8"
+        app:srcCompat="@drawable/imagesearch"
+        android:layout_marginStart="18dp"
+        app:layout_constraintStart_toEndOf="@+id/imageView10"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:backgroundTint="#00000000"
+        android:layout_marginBottom="10dp"
+        android:layout_marginTop="10dp"/>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</com.google.android.material.appbar.AppBarLayout>
+
+    <ImageButton
+        android:layout_height="142dp"
+        android:layout_width="136dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:id="@+id/profile"
+        app:srcCompat="@drawable/imagemypage"
+        android:layout_marginEnd="177dp"
+        android:layout_marginStart="178dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_marginBottom="435dp"
+        android:layout_marginTop="80dp"
+        app:layout_constraintVertical_bias="1.0"
+        app:layout_constraintTop_toBottomOf="@+id/appBarLayout"
+        app:layout_constraintHorizontal_bias="0.512"/>
+
+    <TextView
+        android:layout_height="40dp"
+        android:layout_width="100dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:id="@+id/mynametext"
+        android:layout_marginEnd="156dp"
+        android:layout_marginStart="155dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_marginBottom="374dp"
+        android:layout_marginTop="16dp"
+        app:layout_constraintVertical_bias="0.0"
+        app:layout_constraintTop_toBottomOf="@+id/profile"
+        app:layout_constraintHorizontal_bias="0.0"
+        android:textStyle="bold"
+        android:textSize="24sp"
+        android:text="김은솔"
+        android:gravity="center"/>
+
+    <TextView
+        android:layout_height="40dp"
+        android:layout_width="150dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:id="@+id/follower"
+        android:layout_marginEnd="131dp"
+        android:layout_marginStart="130dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_marginBottom="321dp"
+        android:layout_marginTop="13dp"
+        app:layout_constraintVertical_bias="0.0"
+        app:layout_constraintTop_toBottomOf="@+id/mynametext"
+        app:layout_constraintHorizontal_bias="0.0"
+        android:textStyle="bold"
+        android:textSize="18sp"
+        android:text="팔로워 235"
+        android:gravity="center"
+        android:textColor="#4CAF50"/>
+
+    <ImageButton
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:background="#00000000"
+        android:id="@+id/greenbackground"
+        app:srcCompat="@drawable/feedsquare"
+        android:layout_marginEnd="37dp"
+        android:layout_marginStart="36dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_marginBottom="10dp"
+        android:layout_marginTop="2dp"
+        app:layout_constraintVertical_bias="0.0"
+        app:layout_constraintTop_toBottomOf="@+id/follower"
+        app:layout_constraintHorizontal_bias="0.0"/>
+
+    <ImageButton android:layout_height="wrap_content" android:layout_width="wrap_content" app:layout_constraintStart_toStartOf="@+id/greenbackground" app:layout_constraintEnd_toEndOf="@+id/greenbackground" android:background="#00000000" android:id="@+id/profilegreen" app:srcCompat="@drawable/imagemypage" app:layout_constraintBottom_toBottomOf="@+id/greenbackground" app:layout_constraintVertical_bias="0.107" app:layout_constraintTop_toBottomOf="@+id/follower" app:layout_constraintHorizontal_bias="0.07"/>
+
+    <TextView android:layout_height="wrap_content" android:layout_width="wrap_content" app:layout_constraintStart_toStartOf="@+id/greenbackground" app:layout_constraintEnd_toEndOf="@+id/greenbackground" android:id="@+id/mynamegreen" app:layout_constraintBottom_toBottomOf="@+id/greenbackground" app:layout_constraintVertical_bias="0.099" app:layout_constraintTop_toBottomOf="@+id/follower" app:layout_constraintHorizontal_bias="0.261" android:textStyle="bold" android:textSize="18sp" android:text="김은솔" android:gravity="center"/>
+
+    <ImageView android:layout_height="151dp" android:layout_width="147dp" app:layout_constraintStart_toStartOf="@+id/greenbackground" app:layout_constraintEnd_toEndOf="@+id/greenbackground" android:id="@+id/imageView9" app:srcCompat="@drawable/gochujang" app:layout_constraintBottom_toBottomOf="@+id/greenbackground" app:layout_constraintVertical_bias="0.518" app:layout_constraintTop_toBottomOf="@+id/follower" app:layout_constraintHorizontal_bias="0.172"/>
+
+    <TextView android:layout_height="150dp" android:layout_width="100dp" app:layout_constraintTop_toTopOf="@+id/greenbackground" app:layout_constraintStart_toStartOf="@+id/greenbackground" app:layout_constraintEnd_toEndOf="@+id/greenbackground" android:id="@+id/textView10" app:layout_constraintBottom_toBottomOf="@+id/greenbackground" app:layout_constraintVertical_bias="0.509" app:layout_constraintHorizontal_bias="0.84" android:text="01. 돼지고기는 지방층이 골고루 분포한 삼겹살로 준비해서 먹기 좋은 크게 사방 4㎝ 크기로 얇게 썬다. 02. 대파는 굵게 채 썰고 양파도 채 썬다. 03. 홍고추는 씨를 발라내고 어슷하게 채 썰고 청양고추는 씨째 곱게 다진다. 04. 고추장에 고운 고춧가루와 간장을 섞어서 고춧가루를 불린 후 다진 마늘, 생강, 청주, 설탕, 참기름, 후춧가루를 넣어서 잘 섞어준다. 05. 볼에 돼지고기, 대파, 양파, 홍고추, 청양고추를 넣고 ④의 양념장에 살살 버무려 간이 배도록 30분 정도 재운다. 06. 팬에 기름을 약간 두르고 달군 후 ⑤의 고기와 채소를 넣어서 중간 불에서 볶는다. "/>
+
+    <ImageButton android:layout_height="wrap_content" android:layout_width="wrap_content" app:layout_constraintStart_toStartOf="@+id/greenbackground" app:layout_constraintEnd_toEndOf="@+id/greenbackground" android:background="#00000000" android:id="@+id/carrot" app:srcCompat="@drawable/carrot" app:layout_constraintBottom_toBottomOf="@+id/greenbackground" app:layout_constraintVertical_bias="0.992" app:layout_constraintTop_toBottomOf="@+id/follower" app:layout_constraintHorizontal_bias="0.706"/>
+
+    <ImageButton android:layout_height="wrap_content" android:layout_width="wrap_content" app:layout_constraintStart_toStartOf="@+id/greenbackground" app:layout_constraintEnd_toEndOf="@+id/greenbackground" android:background="#00000000" android:id="@+id/chat" app:srcCompat="@drawable/talk" app:layout_constraintBottom_toBottomOf="@+id/greenbackground" app:layout_constraintVertical_bias="0.94" app:layout_constraintTop_toBottomOf="@+id/follower" app:layout_constraintHorizontal_bias="0.878"/>
+
+    <TextView android:layout_height="20dp" android:layout_width="30dp" app:layout_constraintStart_toStartOf="@+id/greenbackground" app:layout_constraintEnd_toEndOf="@+id/greenbackground" android:id="@+id/number1" app:layout_constraintBottom_toBottomOf="@+id/greenbackground" app:layout_constraintVertical_bias="0.941" app:layout_constraintTop_toBottomOf="@+id/follower" app:layout_constraintHorizontal_bias="0.792" android:text="82"/>
+
+    <TextView android:layout_height="20dp" android:layout_width="30dp" app:layout_constraintStart_toStartOf="@+id/greenbackground" app:layout_constraintEnd_toEndOf="@+id/greenbackground" android:id="@+id/number2" app:layout_constraintBottom_toBottomOf="@+id/greenbackground" app:layout_constraintVertical_bias="0.938" app:layout_constraintTop_toBottomOf="@+id/follower" app:layout_constraintHorizontal_bias="0.974" android:text="17"/>
+
+    <Button android:layout_height="wrap_content" android:layout_width="wrap_content" app:layout_constraintEnd_toEndOf="parent" android:id="@+id/writingbutton" android:layout_marginEnd="35dp" android:layout_marginStart="33dp" app:layout_constraintStart_toEndOf="@+id/mynametext" android:layout_marginBottom="35dp" android:layout_marginTop="240dp" app:layout_constraintVertical_bias="1.0" app:layout_constraintTop_toBottomOf="@+id/appBarLayout" app:layout_constraintHorizontal_bias="0.0" android:textStyle="bold" android:text="글쓰기" android:textColor="#000000" app:layout_constraintBottom_toTopOf="@+id/greenbackground"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

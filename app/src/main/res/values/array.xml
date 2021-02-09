@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="food">
+        <item>쌀</item>
+        <item>찹쌀</item>
+        <item>콩</item>
+        <item>팥</item>
+        <item>녹두</item>
+        <item>메밀</item>
+        <item>고구마</item>
+        <item>감자</item>
+        <item>배추</item>
+        <item>양상추</item>
+        <item>시금치</item>
+        <item>상추</item>
+        <item>수박</item>
+        <item>오이</item>
+        <item>호박</item>
+        <item>토마토</item>
+        <item>딸기</item>
+        <item>무</item>
+        <item>당근</item>
+        <item>열무</item>
+        <item>건고추</item>
+        <item>파</item>
+        <item>양파</item>
+        <item>생강</item>
+        <item>고춧가루</item>
+        <item>미나리</item>
+        <item>깻잎</item>
+        <item>피망</item>
+        <item>파프리카</item>
+        <item>멜론</item>
+        <item>참깨</item>
+        <item>땅콩</item>
+    </string-array>
+
+    <string-array name="food_size">
+        <item>10g</item>
+        <item>20g</item>
+        <item>30g</item>
+        <item>50g</item>
+        <item>100g</item>
+        <item>200g</item>
+        <item>500g</item>
+        <item>1kg</item>
+        <item>3kg</item>
+        <item>1개</item>
+        <item>2개</item>
+        <item>3개</item>
+        <item>5개</item>
+        <item>10개</item>
+        <item>1마리</item>
+        <item>2마리</item>
+        <item>3마리</item>
+        <item>5마리</item>
+        <item>10마리</item>
+    </string-array>
+</resources>
